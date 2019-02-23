@@ -6,7 +6,7 @@ function createWindow () {
   win.on('close', e => {
     let options = {
       defaultId: 0,
-      buttons: ['Wait', 'Cancel'],
+      buttons: ['Wait', 'Discard'],
       message: 'You have unsaved changes. Discard them?',
     };
     let choice = dialog.showMessageBox(win, options);
